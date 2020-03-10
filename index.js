@@ -9,3 +9,24 @@ function handleClick(e) {
 
 /* Write your implementation of greet() */
 /* Write your implementation of displayMessage() */
+
+
+function greet(timeString){
+  let splitString = timeString.split(":");
+
+    if( Number(splitString[0]) < 12){
+      return "Good Morning";
+    }else if(Number(splitString[0]) > 17){
+      return "Good Evening";
+    }else {
+      return "Good Afternoon";
+    }
+}
+
+function displayMessage(testContent){
+  let hiTag = document.querySelector("h1");
+
+  hiTag.innerText = testContent;
+
+  // inputTag.addEventListener('submit',inputTag, testContent);
+}
